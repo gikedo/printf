@@ -1,6 +1,6 @@
 #include "main.h"
 
-/************************* WRITE HANDLE *************************/
+/********** WRITE HANDLE *******/
 /**
  * handle_write_char - Prints a string
  * @c: char types.
@@ -85,7 +85,7 @@ int write_number(int is_negative, int ind, char buffer[],
  * @flags: Flags
  * @width: width
  * @prec: Precision specifier
- * @length: Number length
+ * @length: Digit length
  * @padd: Pading char
  * @extra_c: Extra char
  *
@@ -147,7 +147,7 @@ int write_num(int ind, char buffer[],
  * @precision: Precision specifier
  * @size: Size specifier
  *
- * Return: Number of written chars.
+ * Return: Digit of written chars.
  */
 int write_unsgnd(int is_negative, int ind,
 	char buffer[],
@@ -196,10 +196,10 @@ int write_unsgnd(int is_negative, int ind,
 }
 
 /**
- * write_pointer - Write a memory address
- * @buffer: Arrays of chars
+ * write_pointer - Writes a memory address
+ * @buffer: shows Arrays of chars
  * @ind: Index at which the number starts in the buffer
- * @length: Length of number
+ * @length: Length of the nnumber
  * @width: Wwidth specifier
  * @flags: Flags specifier
  * @padd: Char representing the padding
